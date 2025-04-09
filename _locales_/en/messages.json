@@ -1,0 +1,50 @@
+{
+  "extensionName": {
+    "message": "Instagram Volume Limiter",
+    "description": "Name of the extension displayed in the addons manager."
+  },
+  "extensionDescription": {
+    "message": "Adjusts default volume for Instagram videos, with toggle and presets.",
+    "description": "Description of the extension shown in the addons manager."
+  },
+  "browserActionTitle": {
+    "message": "Instagram Volume Control",
+    "description": "Tooltip text for the browser action button."
+  },
+  "popupHtmlTitle": {
+    "message": "Instagram Volume Control",
+    "description": "Title of the popup window (browser tab)."
+  },
+  "popupTitle": {
+    "message": "Instagram Video Volume",
+    "description": "Main heading inside the popup."
+  },
+  "enableSwitchLabelActive": {
+    "message": "Extension Active",
+    "description": "Label next to the toggle switch when the extension is enabled."
+  },
+  "enableSwitchLabelInactive": {
+    "message": "Extension Inactive",
+    "description": "Label next to the toggle switch when the extension is disabled."
+  },
+  "presetSilent": {
+    "message": "Silent",
+    "description": "Label for the 0% volume preset button."
+  },
+  "presetLow5": {
+    "message": "Low (5%)",
+    "description": "Label for the 5% volume preset button."
+  },
+  "presetMedium25": {
+    "message": "Medium (25%)",
+    "description": "Label for the 25% volume preset button."
+  },
+  "presetHigh50": {
+    "message": "High (50%)",
+    "description": "Label for the 50% volume preset button."
+  },
+  "popupNote": {
+    "message": "Set the default volume level.",
+    "description": "Instructional note at the bottom of the popup."
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "manifest_version": 2,
+  "name": "Instagram Volume Limiter",
+  "version": "1.6", 
+  "description": "Adjusts default volume for Instagram videos, with toggle, presets, and keyboard shortcuts.", 
+
+  "permissions": [
+    "storage",
+    "*://*.instagram.com/*"
+    
+  ],
+
+  "background": { 
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+
+  "browser_action": {
+    "default_icon": { 
+      "48": "icons/icon-48.png",
+      "96": "icons/icon-48.png"
+    },
+    "default_title": "Instagram Volume Control",
+    "default_popup": "popup/popup.html"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.instagram.com/*"],
+      "js": ["volume-fix.js"],
+      "run_at": "document_idle"
+    }
+  ],
+
+  "icons": {
+    "48": "icons/icon-48.png",
+    "96": "icons/icon-48.png"
+  },
+
+  "commands": { 
+    "toggle-enabled": {
+      "suggested_key": {
+        "default": "Alt+Shift+T" 
+      },
+      "description": "Eklentiyi Aç/Kapat" 
+    },
+    "decrease-volume": {
+      "suggested_key": {
+        "default": "Alt+Shift+Down"
+      },
+      "description": "Sesi Azalt (%5)"
+    },
+    "increase-volume": {
+      "suggested_key": {
+        "default": "Alt+Shift+Up"
+      },
+      "description": "Sesi Artır (%5)"
+    }
+  }
+}

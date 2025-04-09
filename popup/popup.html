@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en"> <!-- Dil etiketini de İngilizce yaptık -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Volume Control</title> <!-- Değişti -->
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Ana Başlık -->
+        <h2>Instagram Video Volume</h2> <!-- Değişti -->
+
+        <!-- Eklenti Aktif/Pasif Anahtarı -->
+        <div class="switch-container">
+            <label class="switch">
+                <input type="checkbox" id="enableSwitch">
+                <span class="slider-round"></span>
+            </label>
+            <!-- Etiket JS ile dinamik olarak ayarlanacak (Başlangıç değeri önemli değil artık) -->
+            <span class="switch-label">Extension Active</span> <!-- Değişti (JS yine de bunu güncelleyecek) -->
+        </div>
+
+        <!-- Ses Ayar Kaydırıcısı -->
+        <div class="slider-container" id="sliderArea">
+            <input type="range" id="volumeSlider" min="0" max="1" step="0.01" value="0.05">
+            <span id="volumeValue">5%</span>
+        </div>
+
+        <!-- Ön Ayar Butonları -->
+        <div class="preset-buttons-container" id="presetButtonsArea">
+            <!-- Buton metinleri -->
+            <button class="preset-button" data-volume="0">Silent</button> <!-- Değişti -->
+            <button class="preset-button" data-volume="0.05">Low (5%)</button> <!-- Değişti -->
+            <button class="preset-button" data-volume="0.25">Medium (25%)</button> <!-- Değişti -->
+            <button class="preset-button" data-volume="0.50">High (50%)</button> <!-- Değişti -->
+        </div>
+
+        <!-- Not -->
+        <p class="note">Set the default volume level.</p> <!-- Değişti -->
+
+    </div>
+    <script src="popup.js"></script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+{
+  "extensionName": {
+    "message": "Instagram Ses Sınırlayıcı",
+    "description": "Eklentinin eklenti yöneticisinde görünen adı."
+  },
+  "extensionDescription": {
+    "message": "Instagram videolarının ses seviyesini kullanıcı tarafından ayarlanabilir hale getirir, açılıp kapatılabilir ve ön ayarlar sunar.",
+    "description": "Eklentinin eklenti yöneticisinde gösterilen açıklaması."
+  },
+  "browserActionTitle": {
+    "message": "Instagram Ses Ayarı",
+    "description": "Tarayıcı eylem düğmesi için araç ipucu metni."
+  },
+  "popupHtmlTitle": {
+    "message": "Instagram Ses Ayarı",
+    "description": "Açılır pencerenin başlığı (tarayıcı sekmesinde)."
+  },
+  "popupTitle": {
+    "message": "Instagram Video Sesi",
+    "description": "Açılır pencere içindeki ana başlık."
+  },
+  "enableSwitchLabelActive": {
+    "message": "Eklenti Aktif",
+    "description": "Eklenti etkinleştirildiğinde geçiş anahtarının yanındaki etiket."
+  },
+  "enableSwitchLabelInactive": {
+    "message": "Eklenti Pasif",
+    "description": "Eklenti devre dışı bırakıldığında geçiş anahtarının yanındaki etiket."
+  },
+  "presetSilent": {
+    "message": "Sessiz",
+    "description": "%0 ses seviyesi ön ayar düğmesinin etiketi."
+  },
+  "presetLow5": {
+    "message": "Kısık (%5)",
+    "description": "%5 ses seviyesi ön ayar düğmesinin etiketi."
+  },
+  "presetMedium25": {
+    "message": "Orta (%25)",
+    "description": "%25 ses seviyesi ön ayar düğmesinin etiketi."
+  },
+  "presetHigh50": {
+    "message": "Yüksek (%50)",
+    "description": "%50 ses seviyesi ön ayar düğmesinin etiketi."
+  },
+  "popupNote": {
+    "message": "Varsayılan ses seviyesini ayarlayın.",
+    "description": "Açılır pencerenin altındaki talimat notu."
+  }
+}
