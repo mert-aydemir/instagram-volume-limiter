@@ -1,2 +1,3 @@
-# instagram-volume-limiter
-Tame annoying loud Instagram videos! This Firefox add-on lets you set a comfortable default volume (0-100%) via a popup with toggle, presets, and keyboard shortcuts.
+Instagram Volume Limiter: A Firefox web extension designed to stop Instagram videos from starting at full blast.
+
+Set your preferred default volume level using an intuitive popup interface that includes an adjustable slider, an on/off toggle switch, quick volume presets (Silent, 5%, 25%, 50%), and convenient keyboard shortcuts for volume control and toggling the extension. Open source project.
