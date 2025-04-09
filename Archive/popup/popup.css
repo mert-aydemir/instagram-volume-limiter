@@ -1,0 +1,241 @@
+/* Genel Ayarlar ve Font */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; /* Modern sistem fontları */
+  width: 260px; /* Genişlik */
+  padding: 20px;
+  background-color: #ffffff; /* Temiz beyaz arka plan */
+  color: #262626; /* Instagram'ın ana metin rengine yakın */
+  margin: 0;
+  overflow: hidden; /* Gereksiz kaydırmaları engelle */
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px; /* Elementler arasına genel boşluk */
+}
+
+/* Başlık */
+h2 {
+  margin: 0 0 5px 0; /* Üst boşluğu kaldır, alt boşluğu azalt */
+  font-size: 1.15em;
+  font-weight: 600; /* Biraz daha kalın */
+  color: #262626;
+  text-align: center;
+}
+
+/* --- Switch Stilleri (Modern Görünüm) --- */
+.switch-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+  gap: 10px; /* Switch ile etiket arasına boşluk */
+  padding: 5px 0; /* Dikeyde biraz boşluk */
+}
+
+.switch-label {
+  font-size: 0.95em;
+  color: #555;
+  transition: color 0.3s ease;
+}
+
+/* The switch - the box around the slider */
+.switch {
+position: relative;
+display: inline-block;
+width: 44px; /* Biraz daha kibar */
+height: 24px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+opacity: 0;
+width: 0;
+height: 0;
+}
+
+/* The slider */
+.slider-round {
+position: absolute;
+cursor: pointer;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+background-color: #ccd6dd; /* Pasif renk */
+transition: .3s;
+border-radius: 24px;
+}
+
+.slider-round:before {
+position: absolute;
+content: "";
+height: 18px;
+width: 18px;
+left: 3px;
+bottom: 3px;
+background-color: white;
+box-shadow: 0 1px 3px rgba(0,0,0,0.2); /* Hafif gölge */
+transition: .3s;
+border-radius: 50%;
+}
+
+input:checked + .slider-round {
+/* Instagram Gradient */
+background-image: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+}
+
+input:checked + .slider-round:before {
+transform: translateX(20px); /* Hareketi ayarla */
+}
+/* --- Switch Stilleri Bitiş --- */
+
+
+/* --- Slider Alanı (Daha Şık) --- */
+.slider-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 15px; /* Slider ile değer arasına boşluk */
+  transition: opacity 0.3s ease;
+}
+
+#volumeSlider {
+  flex-grow: 1;
+  cursor: pointer;
+  height: 6px; /* Daha ince track */
+  background: #eef1f3; /* Çok açık gri track */
+  border-radius: 6px;
+  outline: none;
+  -webkit-appearance: none;
+  appearance: none;
+  position: relative; /* Thumb pozisyonlaması için */
+}
+
+/* Slider Thumb (Topuz) */
+#volumeSlider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  background: #ffffff; /* Beyaz topuz */
+  border: 2px solid #c13584; /* Kenarlık rengi (Instagram moru) */
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.15);
+  margin-top: -6px; /* Dikeyde ortalamak için */
+  transition: transform 0.1s ease;
+}
+#volumeSlider::-webkit-slider-thumb:hover {
+  transform: scale(1.1); /* Hover'da hafif büyüsün */
+}
+
+#volumeSlider::-moz-range-thumb {
+  width: 14px; /* Firefox için border dahil toplam 18px */
+  height: 14px;
+  background: #ffffff;
+  border: 2px solid #c13584;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.15);
+  transition: transform 0.1s ease;
+}
+#volumeSlider::-moz-range-thumb:hover {
+   transform: scale(1.1);
+}
+
+/* Slider Değer Göstergesi */
+#volumeValue {
+  font-weight: 600;
+  min-width: 45px; /* Sabit genişlik */
+  text-align: right;
+  color: #c13584; /* Değeri vurgula */
+  background-color: #f0f0f0; /* Hafif arkaplan */
+  padding: 3px 6px;
+  border-radius: 4px;
+  font-size: 0.9em;
+}
+/* --- Slider Alanı Bitiş --- */
+
+
+/* --- Preset Butonları (Flex Wrap ile Düzeltilmiş) --- */
+.preset-buttons-container {
+  display: flex; /* Flexbox kullan */
+  flex-wrap: wrap; /* Sığmazsa alt satıra at */
+  justify-content: space-between; /* Satırdaki boşluğu dağıt */
+  gap: 8px; /* Butonlar arası boşluk */
+  width: 100%;
+  transition: opacity 0.3s ease;
+}
+
+.preset-button {
+  padding: 7px 6px; /* Dikey/Yatay padding ayarı */
+  font-size: 0.78em; /* Font boyutu ayarı */
+  font-weight: 500;
+  background-color: #f5f5f5; /* Açık gri buton */
+  border: none; /* Kenarlığı kaldır */
+  border-radius: 6px; /* Daha yuvarlak köşeler */
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+  color: #333;
+  text-align: center;
+  white-space: nowrap; /* Metnin alt satıra inmesini engelle (buton içinde) */
+  flex-grow: 1; /* Bulunduğu satırda boşluk varsa büyümesine izin ver */
+  min-width: min-content; /* İçeriğinden daha küçük olmasın */
+}
+
+.preset-button:hover {
+  background-color: #e0e0e0; /* Hover rengi */
+  transform: translateY(-1px); /* Hafif yukarı kalkma efekti */
+}
+
+.preset-button:active {
+  background-color: #d5d5d5; /* Tıklama rengi */
+  transform: translateY(0px); /* Efekti sıfırla */
+}
+/* --- Preset Butonları Bitiş --- */
+
+
+/* Not */
+.note {
+  font-size: 0.8em;
+  color: #8e8e8e; /* Instagram'ın ikincil metin rengi */
+  text-align: center;
+  margin: 5px 0 0 0; /* Üst boşluğu azalt, altı sıfırla */
+}
+
+/* --- Devre Dışı Durumları --- */
+.slider-container.disabled,
+.preset-buttons-container.disabled {
+  opacity: 0.4; /* Daha belirgin solukluk */
+  pointer-events: none;
+}
+
+.switch-container input:disabled + .slider-round {
+  cursor: not-allowed; /* Switch kapalıyken imleç */
+}
+
+/* Eklenti pasifken etiketin rengini de soluklaştır */
+body:has(#enableSwitch:not(:checked)) .switch-label {
+  color: #aaa;
+}
+
+/* İsteğe bağlı: Genel hafif animasyon */
+@keyframes fadeIn {
+from { opacity: 0; transform: translateY(-5px); }
+to { opacity: 1; transform: translateY(0); }
+}
+
+.container > * {
+animation: fadeIn 0.4s ease-out forwards;
+opacity: 0; /* Başlangıçta görünmez yap */
+}
+
+/* Farklı elemanlara gecikme ekle (opsiyonel) */
+.container h2 { animation-delay: 0.05s; }
+.switch-container { animation-delay: 0.1s; }
+.slider-container { animation-delay: 0.15s; }
+.preset-buttons-container { animation-delay: 0.2s; }
+.note { animation-delay: 0.25s; }

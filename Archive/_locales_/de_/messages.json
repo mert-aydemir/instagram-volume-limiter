@@ -1,0 +1,50 @@
+{
+    "extensionName": {
+      "message": "Instagram Lautstärke-Begrenzer",
+      "description": "Name der Erweiterung, der im Add-on-Manager angezeigt wird."
+    },
+    "extensionDescription": {
+      "message": "Passt die Standardlautstärke für Instagram-Videos an, mit Ein-/Ausschalter und Voreinstellungen.",
+      "description": "Beschreibung der Erweiterung, die im Add-on-Manager angezeigt wird."
+    },
+    "browserActionTitle": {
+      "message": "Instagram Lautstärkeregelung",
+      "description": "Tooltip-Text für die Browser-Aktionsschaltfläche."
+    },
+    "popupHtmlTitle": {
+      "message": "Instagram Lautstärkeregelung",
+      "description": "Titel des Popup-Fensters (Browser-Tab)."
+    },
+    "popupTitle": {
+      "message": "Instagram Video Lautstärke",
+      "description": "Hauptüberschrift im Popup."
+    },
+    "enableSwitchLabelActive": {
+      "message": "Erweiterung Aktiv",
+      "description": "Beschriftung neben dem Schalter, wenn die Erweiterung aktiviert ist."
+    },
+    "enableSwitchLabelInactive": {
+      "message": "Erweiterung Inaktiv",
+      "description": "Beschriftung neben dem Schalter, wenn die Erweiterung deaktiviert ist."
+    },
+    "presetSilent": {
+      "message": "Stumm",
+      "description": "Beschriftung für die 0% Lautstärke-Voreinstellung."
+    },
+    "presetLow5": {
+      "message": "Leise (5%)",
+      "description": "Beschriftung für die 5% Lautstärke-Voreinstellung."
+    },
+    "presetMedium25": {
+      "message": "Mittel (25%)",
+      "description": "Beschriftung für die 25% Lautstärke-Voreinstellung."
+    },
+    "presetHigh50": {
+      "message": "Hoch (50%)",
+      "description": "Beschriftung für die 50% Lautstärke-Voreinstellung."
+    },
+    "popupNote": {
+      "message": "Stellen Sie die Standardlautstärke ein.",
+      "description": "Hinweis am unteren Rand des Popups."
+    }
+  }

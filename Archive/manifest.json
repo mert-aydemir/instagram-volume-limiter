@@ -1,0 +1,32 @@
+{
+  "manifest_version": 2,
+  "name": "Instagram Volume Limiter", 
+  "version": "1.5",
+  "description": "Adjusts default volume for Instagram videos, with toggle and presets.", 
+
+  
+
+  "permissions": [
+    "storage",
+    "*://*.instagram.com/*"
+  ],
+  "browser_action": {
+    "default_icon": {
+      "48": "icons/icon-48.png",
+      "96": "icons/icon-48.png"
+    },
+    "default_title": "Instagram Volume Control", 
+    "default_popup": "popup/popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*.instagram.com/*"],
+      "js": ["volume-fix.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "icons": {
+    "48": "icons/icon-48.png",
+    "96": "icons/icon-96.png"
+  }
+}
